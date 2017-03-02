@@ -1,0 +1,23 @@
+{
+    "name": "StefanPruzinsky/Stuff Framework",
+    "description": "- just framework for object lovers -",
+    "keywords": ["framework", "stuff"],
+    "license": "MIT",
+    "homepage": "http://stuff-framework.sk",
+    "support": {
+        "source": "https://github.com/StefanPruzinsky/Stuff-Framework"
+    },
+    "authors": [
+        {
+            "name": "Štefan Pružinský",
+            "email": "pruzinsky.s@gmail.com"
+        }
+		{
+            "name": "Dominik Joppa",
+            "email": "domjoppa@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4"
+    }
+}
