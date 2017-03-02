@@ -1,0 +1,19 @@
+#section(body)
+    <div class="clear"></div>
+        
+    <div id="main-body" class="fail">
+        <p class="enormous-font bree-font">## title ##</p>
+        <p class="big-font">## errorMessage ##</p>
+        <?php if(isset($errorFile) && isset($errorLine)): ?>
+            <p>File: ## errorFile ##</p>
+            <p>Line: ## errorLine ##</p>
+        <?php endif; ?>
+        <hr>
+        <p class="big-font"> Let's return to the <a href="" class="underline">home page</a></p>
+    </div>
+
+    <script>
+        var StyleHelper = new StyleHelper();
+        StyleHelper.ApplyErrorStyle();
+    </script>
+#end(body)
