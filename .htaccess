@@ -1,0 +1,12 @@
+RewriteEngine On
+# RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule !\.(css|js|icon|zip|rar|png|jpg|gif|pdf)$ index.php [L]
+
+AddType application/x-httpd-php .php .phtml
+
+ErrorDocument 500 http://%{HTTP_HOST}/error/500
+ErrorDocument 404 http://%{HTTP_HOST}/error/404
+ErrorDocument 403 http://%{HTTP_HOST}/error/403
